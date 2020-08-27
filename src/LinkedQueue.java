@@ -24,11 +24,12 @@ public class LinkedQueue {
         for (int x = 0; x < count; x++) {
 			queueNew.enqueue(dequeue());
 			
-			if (x==half) 
-				queueTemp.enqueue(dequeue());
+			if (x==half) {
+				queueTemp.enqueue(dequeue());}
+
 				
 	}
-        System.out.println(queueNew);
+		System.out.println(queueNew);
 	}
 	
 	void removeMid() {
