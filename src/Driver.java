@@ -96,6 +96,7 @@ public class Driver {
 		System.out.println("We will now remove: " + queue.dequeue());
 
 		System.out.println("\nNumber of elements left:  " + queue.size());
+		queue.dequeue();
 		
 		System.out.println("\nWe will now remove: " + arrayQ.dequeue());
 		System.out.println("We will now remove: " + arrayQ.dequeue());
@@ -112,10 +113,12 @@ public class Driver {
 		queue.enqueue(4);
 		queue.enqueue(9);
 		queue.enqueue(2);
-		System.out.println(queue.size());
-
+		
+		System.out.println("\nBefore removing the middle element: " + queue);
 		queue.removeMiddle();
-		System.out.println(queue.size());
+		System.out.println("After removing the middle element: " + queue);
+		
+		
 
 
 	}
