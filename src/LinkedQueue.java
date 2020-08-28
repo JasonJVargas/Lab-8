@@ -17,6 +17,7 @@ public class LinkedQueue {
 		int half = (count / 2);
 		int[] queue = new int[var - 1];
 		int n = 0;
+		// Create a case to remove specific index for an even list
 		if (var % 2 == 0) {
 			for (int i = 0; i < var; i++) {
 				if (i != half - 1) {
@@ -26,7 +27,7 @@ public class LinkedQueue {
 					dequeue();
 				}
 			}
-		} else {
+		} else { // Else statement for an odd list
 			for (int i = 0; i < var; i++) {
 				if (i != half) {
 					queue[n] = dequeue();
